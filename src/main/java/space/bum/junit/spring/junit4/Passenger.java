@@ -1,6 +1,7 @@
-package space.bum.junit.spring;
+package space.bum.junit.spring.junit4;
 
 import lombok.Getter;
+import space.bum.junit.spring.tradi.Country;
 
 @Getter
 public class Passenger {
@@ -10,6 +11,9 @@ public class Passenger {
   public Passenger(String name) {
     super();
     this.name = name;
-    this.country = new Country("대한민국", "KR");
+  }
+
+  public void setCountry(Country country) {
+    this.country = country;
   }
 }

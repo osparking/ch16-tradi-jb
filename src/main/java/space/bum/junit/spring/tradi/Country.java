@@ -1,4 +1,4 @@
-package space.bum.junit.spring;
+package space.bum.junit.spring.tradi;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
