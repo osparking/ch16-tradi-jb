@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+  <bean id="passenger"
+    class="space.bum.junit.spring.junit4.Passenger">
+    <constructor-arg name="name" value="김철수" />
+    <property name="country" ref="country" />
+  </bean>
+
+  <bean id="country" class="space.bum.junit.spring.tradi.Country">
+    <constructor-arg name="name" value="대한민국" />
+    <constructor-arg name="codeName" ref="KR" />
+  </bean>
+</beans>
