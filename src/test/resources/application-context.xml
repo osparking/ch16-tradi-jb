@@ -13,6 +13,6 @@
 
   <bean id="country" class="space.bum.junit.spring.tradi.Country">
     <constructor-arg name="name" value="대한민국" />
-    <constructor-arg name="codeName" ref="KR" />
+    <constructor-arg name="codeName" value="KR" />
   </bean>
 </beans>
